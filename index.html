@@ -1,144 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Odyssey Arena</title>
-  <style>
-    :root {
-      color-scheme: dark;
-      --bg: #10131a;
-      --panel: #181d27;
-      --text: #f4efe1;
-      --muted: #b7bdc8;
-      --accent: #f2b84b;
-      --line: #303746;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    main {
-      width: min(920px, calc(100% - 32px));
-      margin: 0 auto;
-      padding: 56px 0;
-    }
-
-    section {
-      border-top: 1px solid var(--line);
-      padding: 28px 0;
-    }
-
-    .intro {
-      border-top: 0;
-      padding-top: 0;
-    }
-
-    h1 {
-      margin: 0 0 12px;
-      font-size: clamp(42px, 8vw, 78px);
-      line-height: 1;
-      color: var(--accent);
-      letter-spacing: 0;
-    }
-
-    h2 {
-      margin: 0 0 12px;
-      font-size: 24px;
-    }
-
-    p {
-      margin: 0 0 14px;
-      color: var(--muted);
-    }
-
-    a {
-      color: var(--accent);
-    }
-
-    .actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 24px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 11px 16px;
-      border: 1px solid var(--accent);
-      color: var(--text);
-      text-decoration: none;
-      background: rgba(242, 184, 75, 0.12);
-    }
-
-    ul {
-      margin: 0;
-      padding-left: 20px;
-      color: var(--muted);
-    }
-
-    footer {
-      border-top: 1px solid var(--line);
-      margin-top: 28px;
-      padding-top: 20px;
-      color: var(--muted);
-      font-size: 14px;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Odyssey Arena is a fast sword-and-shield survival arena game for Android."
+  />
+  <title>Odyssey Arena — Fight to Be the Last Hero</title>
+  <link rel="icon" href="./logo.webp" />
+  <link rel="stylesheet" href="./styles.css" />
 </head>
-
 <body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Odyssey Arena home">
+      <img src="./logo.webp" alt="" width="64" height="64" />
+      <span>Odyssey Arena</span>
+    </a>
+    <nav aria-label="Legal">
+      <a href="./privacy-policy.html">Privacy</a>
+      <a href="./terms-of-use.html">Terms</a>
+    </nav>
+  </header>
+
   <main>
-    <section class="intro">
-      <h1>Odyssey Arena</h1>
-      <p>
-        Odyssey Arena is a sword-and-shield survival arena game for Android.
-        Enter the arena, face rival heroes, and fight to be the last survivor.
-      </p>
-      <div class="actions">
-        <a class="button" href="privacy-policy.html">Privacy Policy</a>
-        <a class="button" href="privacy-policy.html#data-deletion">Data Deletion</a>
-        <a class="button" href="mailto:cukkacreatives@gmail.com">Contact</a>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">SWORD &amp; SHIELD SURVIVAL</p>
+        <h1>Enter the arena.<br /><span>Outlast them all.</span></h1>
+        <p class="lede">
+          Face rival heroes in compact melee battles where timing, positioning,
+          and survival decide who leaves the arena standing.
+        </p>
+        <a
+          class="button"
+          href="https://play.google.com/store/apps/details?id=com.cukkacreatives.herorivals"
+        >
+          Get it on Google Play
+        </a>
+      </div>
+      <div class="hero-mark" aria-hidden="true">
+        <span class="shield-mark">OA</span>
+        <span class="cross-line cross-line-one"></span>
+        <span class="cross-line cross-line-two"></span>
       </div>
     </section>
 
-    <section>
-      <h2>About The Game</h2>
-      <p>
-        Odyssey Arena focuses on fast arena battles with melee combat, rival AI
-        fighters, health, hit reactions, and survival-focused gameplay.
-      </p>
-      <ul>
-        <li>Sword-and-shield arena combat</li>
-        <li>AI-controlled rival heroes</li>
-        <li>Last-survivor match flow</li>
-        <li>Built for Android</li>
-      </ul>
+    <section class="feature-grid" aria-label="Odyssey Arena features">
+      <article>
+        <span>01 / CLASH</span>
+        <h2>Sword &amp; Shield</h2>
+        <p>Block, reposition, and strike through fast close-range encounters.</p>
+      </article>
+      <article>
+        <span>02 / RIVALS</span>
+        <h2>Living Arena</h2>
+        <p>AI-controlled fighters hunt, clash, take damage, and fall around you.</p>
+      </article>
+      <article>
+        <span>03 / SURVIVE</span>
+        <h2>Last Hero Standing</h2>
+        <p>Every match ends with one survivor. Make sure the arena remembers you.</p>
+      </article>
     </section>
 
-    <section>
-      <h2>Support</h2>
+    <section class="notice" aria-labelledby="monetization-title">
+      <p class="eyebrow">PLAYER CHOICE</p>
+      <h2 id="monetization-title">Purchases &amp; advertisements</h2>
       <p>
-        For support, privacy questions, or other requests, contact us at
-        <a href="mailto:cukkacreatives@gmail.com">cukkacreatives@gmail.com</a>.
+        Odyssey Arena may show advertisements between matches and offers
+        optional rewarded ads for bonus Gold. A one-time Google Play purchase
+        can permanently remove non-rewarded ads and includes a one-time Gold
+        bonus. Current pricing and purchase details are always shown before
+        confirmation.
       </p>
     </section>
-
-    <footer>
-      <span>Odyssey Arena</span>
-    </footer>
   </main>
-</body>
 
+  <footer>
+    <p>© 2026 Cukka Creatives. All rights reserved.</p>
+    <div>
+      <a href="./privacy-policy.html">Privacy Policy</a>
+      <a href="./privacy-policy.html#data-deletion">Data Deletion</a>
+      <a href="./terms-of-use.html">Terms of Use</a>
+      <a href="./app-ads.txt">app-ads.txt</a>
+      <a href="mailto:cukkacreatives@gmail.com">Contact</a>
+    </div>
+  </footer>
+</body>
 </html>
